@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Estilos particulares de APP.jsx
+import '../styles/sass/App.scss';
+
 /**
  * Componente APP
  * @returns Componente principal de la aplicación

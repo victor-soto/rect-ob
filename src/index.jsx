@@ -10,6 +10,7 @@ import App from './components/App';
 
 // * Importamos hojas de estilo (SCSS / SASS / CSS)
 // .... Bootstrap iría aquí
+import './styles/css/index.css';
 
 ReactDom.render(
   <React.StrictMode>

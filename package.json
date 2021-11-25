@@ -8,7 +8,9 @@
     "lint:fix": "eslint --fix ./src",
     "docs:build": "documentation build src/** -f html -o docs",
     "test": "echo \"Comando no inicializado. Hay que configurar JEST\" && exit 1",
-    "start:dev": "webpack-dev-server --mode development --hot --open --static"
+    "start:dev": "webpack-dev-server --mode development --hot --open --static",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
