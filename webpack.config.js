@@ -70,4 +70,27 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new HtmlWebpackPlugin(
+            {
+                template: './public/index.html',
+            },
+        ),
+        new MiniCssExtractPlugin(
+            {
+                filename: './css/styles.css',
+            },
+        ),
+        new SourceMapDevToolPlugin(
+            {
+                filename: '[file].map',
+            },
+        ),
+    ],
+    resolve: {
+        extensions: ['.js', '.jsx', '.css', '.scss', '.sass'],
+        modules: [
+            'node_modules',
+        ],
+    },
 };
