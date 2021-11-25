@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs:build": "documentation build src/** -f html -o docs",
+    "test": "echo \"Comando no inicializado. Hay que configurar JEST\" && exit 1",
+    "start:dev": "webpack-dev-server --mode development --hot --open --static"
   },
   "repository": {
     "type": "git",
